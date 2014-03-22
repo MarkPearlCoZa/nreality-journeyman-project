@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrizeGiving.IntegrationTests", "PrizeGiving.IntegrationTests\PrizeGiving.IntegrationTests.csproj", "{AD2EA3C3-0C21-4182-BE93-0E25AAD53A9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrizeGiving", "PrizeGiving\PrizeGiving.csproj", "{E195A149-2FF2-4318-BC45-3769DAC7D14D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD2EA3C3-0C21-4182-BE93-0E25AAD53A9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2EA3C3-0C21-4182-BE93-0E25AAD53A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2EA3C3-0C21-4182-BE93-0E25AAD53A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD2EA3C3-0C21-4182-BE93-0E25AAD53A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E195A149-2FF2-4318-BC45-3769DAC7D14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E195A149-2FF2-4318-BC45-3769DAC7D14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E195A149-2FF2-4318-BC45-3769DAC7D14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E195A149-2FF2-4318-BC45-3769DAC7D14D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
