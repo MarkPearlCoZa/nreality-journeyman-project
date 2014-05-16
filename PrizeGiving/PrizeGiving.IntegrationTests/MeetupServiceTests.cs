@@ -106,6 +106,7 @@ namespace PrizeGiving.Models
             var rsvps = await meetupService.GetRsvpsByEventIdAndRsvpAnswer(events.First().Id, "yes");
 
             var meetupMember = rsvps.Select(rsvp => rsvp.MeetupMember).First();
+            Assert.IsNotNull(meetupMember);
             Assert.IsNotNullOrEmpty(meetupMember.Name);
             Assert.IsNotNullOrEmpty(meetupMember.Member_Id);
 
