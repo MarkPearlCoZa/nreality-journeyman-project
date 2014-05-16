@@ -7,6 +7,6 @@ namespace PrizeGiving
 {
     public interface IConfiguration
     {
-        string ApiKey {get;set;}
+        string ApiKey {get; }
     }
 }

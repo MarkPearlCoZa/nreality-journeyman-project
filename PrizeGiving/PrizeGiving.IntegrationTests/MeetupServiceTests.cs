@@ -1,12 +1,7 @@
 ﻿using Moq;
 using NUnit.Framework;
 using PrizeGiving.Services;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PrizeGiving.Models
 {
@@ -34,6 +29,14 @@ namespace PrizeGiving.Models
             var events = await meetupService.GetEventsByGroupNameAndTime("DeveloperUG","0,1m");
 
             Assert.IsNotNullOrEmpty(events.First().Id);
+        }
+
+        [Test]
+        public async void GetAllEventsForDeveloperUserGroupByName_ReturnsListOfEvents()
+        {
+            IMeetupService meetupService = new MeetupService(_configuration);
+            var events = await meetupService.GetEventsByGroupName("DeveloperUG");
+            Assert.GreaterOrEqual(events.Count(), 1);
         }
 
 

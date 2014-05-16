@@ -26,6 +26,12 @@ namespace PrizeGiving.Services
             return await GetAsync<List<MeetupEvent>>("events", queryStringValues);
         }
 
+        public async Task<List<MeetupEvent>> GetEventsByGroupName(string groupName)
+        {
+            string queryStringValues = String.Format("group_urlname={0}", groupName);
+            return await GetAsync<List<MeetupEvent>>("events", queryStringValues);
+        }
+
         public async Task<List<MeetupRsvp>> GetRsvpsByEventIdAndRsvpAnswer(string eventId, string rsvpStatus)
         {
             string queryStringValues = String.Format("event_id={0}&rsvp={1}", eventId, rsvpStatus);

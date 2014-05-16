@@ -53,7 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="GroupEventRsvpQuery.cs" />
+    <Compile Include="GroupEventsQuery.cs" />
     <Compile Include="IConfiguration.cs" />
+    <Compile Include="MeetupGroupEventsQuery.cs" />
     <Compile Include="Services\IMeetupService.cs" />
     <Compile Include="Models\MeetupEvent.cs" />
     <Compile Include="Models\MeetupMember.cs" />
