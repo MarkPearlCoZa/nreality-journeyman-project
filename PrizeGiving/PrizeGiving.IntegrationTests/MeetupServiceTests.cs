@@ -6,7 +6,7 @@ using System.Linq;
 namespace PrizeGiving.Models
 {
     [TestFixture]
-    class MeetupServiceTests
+    public class MeetupServiceTests
     {
         IConfiguration _configuration;
 
@@ -59,7 +59,6 @@ namespace PrizeGiving.Models
 
             var rsvps = await meetupService.GetRsvpsByEventIdAndRsvpAnswer(events.First().Id,"yes");
 
-#warning Assume that there has been an RSVP which is not always the case... Find a better way to test for RSVP's
             Assert.Greater(rsvps.Count, 0);
         }
 
@@ -72,7 +71,18 @@ namespace PrizeGiving.Models
 
             var rsvps = await meetupService.GetRsvpsByEventIdAndRsvpAnswer(events.First().Id, "yes");
 
-#warning Assume that there has been an RSVP which is not always the case... Find a better way to test for RSVP's
+            Assert.AreEqual(0, rsvps.Count(r => r.Response != "yes"));
+        }
+
+        [Test]
+        public async void GetYesRsvpsForFirstEventWithinOneMonthEnsureThatMembersForEventHaveValidDetails()
+        {
+            IMeetupService meetupService = new MeetupService(_configuration);
+
+            var events = await meetupService.GetEventsByGroupNameAndTime("DeveloperUG", "0,1m");
+
+            var rsvps = await meetupService.GetRsvpsByEventIdAndRsvpAnswer(events.First().Id, "yes");
+
             Assert.AreEqual(0, rsvps.Count(r => r.Response != "yes"));
         }
 
@@ -85,6 +95,22 @@ namespace PrizeGiving.Models
 
             Assert.AreEqual(rsvps.Count, 0);
         }
+
+        [Test]
+        public async void EnsureRsvpMembersReturnedNameAndId()
+        {
+            IMeetupService meetupService = new MeetupService(_configuration);
+
+            var events = await meetupService.GetEventsByGroupName("DeveloperUG");
+
+            var rsvps = await meetupService.GetRsvpsByEventIdAndRsvpAnswer(events.First().Id, "yes");
+
+            var meetupMember = rsvps.Select(rsvp => rsvp.MeetupMember).First();
+            Assert.IsNotNullOrEmpty(meetupMember.Name);
+            Assert.IsNotNullOrEmpty(meetupMember.Member_Id);
+
+        }
+
 
     }
 }

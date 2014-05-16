@@ -62,6 +62,7 @@
     <Compile Include="GroupEventsQueryImpl.cs" />
     <Compile Include="MeetupGroupEventRsvpQueryTests.cs" />
     <Compile Include="MeetupServiceTests.cs" />
+    <Compile Include="MembersWhoRsvpYesForAnEventTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
