@@ -55,9 +55,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PrizeGiving\PrizeGiving.csproj">
+    <ProjectReference Include="..\PrizeGiving\PrizeGiving.Domain.csproj">
       <Project>{E195A149-2FF2-4318-BC45-3769DAC7D14D}</Project>
-      <Name>PrizeGiving</Name>
+      <Name>PrizeGiving.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrizeGiving.IntegrationTests", "PrizeGiving.IntegrationTests\PrizeGiving.IntegrationTests.csproj", "{AD2EA3C3-0C21-4182-BE93-0E25AAD53A9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrizeGiving", "PrizeGiving\PrizeGiving.csproj", "{E195A149-2FF2-4318-BC45-3769DAC7D14D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrizeGiving.Domain", "PrizeGiving\PrizeGiving.Domain.csproj", "{E195A149-2FF2-4318-BC45-3769DAC7D14D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{56D62A6D-A93C-4BFD-B2AC-1FD0174B4BFD}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{56D62A
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrizeGiving.UnitTests", "PrizeGiving.UnitTests\PrizeGiving.UnitTests.csproj", "{48FC89DA-CC35-4111-B22B-D2AE20900FBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B2766531-6325-4B15-94FF-020BD812D146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrizeGiving.Mvc", "PrizeGiving.Mvc\PrizeGiving.Mvc.csproj", "{8AF54382-01AB-46D7-99AC-E77B6B97CAC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,8 +38,16 @@ Global
 		{48FC89DA-CC35-4111-B22B-D2AE20900FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48FC89DA-CC35-4111-B22B-D2AE20900FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48FC89DA-CC35-4111-B22B-D2AE20900FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF54382-01AB-46D7-99AC-E77B6B97CAC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF54382-01AB-46D7-99AC-E77B6B97CAC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF54382-01AB-46D7-99AC-E77B6B97CAC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF54382-01AB-46D7-99AC-E77B6B97CAC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD2EA3C3-0C21-4182-BE93-0E25AAD53A9E} = {B2766531-6325-4B15-94FF-020BD812D146}
+		{48FC89DA-CC35-4111-B22B-D2AE20900FBB} = {B2766531-6325-4B15-94FF-020BD812D146}
 	EndGlobalSection
 EndGlobal

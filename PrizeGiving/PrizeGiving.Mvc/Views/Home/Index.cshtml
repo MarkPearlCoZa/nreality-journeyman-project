@@ -1,0 +1,10 @@
+﻿@model PrizeGiving.Mvc.Controllers.IndexModel
+@{
+    
+}
+
+<div class="row">
+    @Html.BeginForm(){
+    @Html.DropDownListFor(model => model.MeetupEvent, Model.Events, "Choose...")
+    } 
+</div>
