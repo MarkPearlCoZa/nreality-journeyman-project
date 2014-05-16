@@ -5,6 +5,6 @@ namespace PrizeGiving
 {
     public interface GroupEventRsvpQuery
     {
-        IEnumerable<MeetupRsvp> Execute();
+        IEnumerable<MeetupMember> GetRsvpYesAttendees(string groupEventId);
     }
 }

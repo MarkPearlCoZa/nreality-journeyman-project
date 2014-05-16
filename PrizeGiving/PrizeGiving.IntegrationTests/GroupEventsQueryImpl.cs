@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using NUnit.Framework;
 
 namespace PrizeGiving.Models
@@ -13,5 +14,14 @@ namespace PrizeGiving.Models
             var result = sut.GetEventsForGroup("DeveloperUG");
             Assert.GreaterOrEqual(result.Count(), 1);
         }
+
+        [Test]
+        public void ThrowExceptionIfNoGroupSet()
+        {
+            var sut = new MeetupGroupEventsQuery();
+            Assert.Throws<MissingFieldException>(() => sut.GetEventsForGroup(string.Empty));
+        }
+
+
     }
 }
