@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using PrizeGiving.Models;
 using PrizeGiving.Services;
+using System.Threading.Tasks;
 
 namespace PrizeGiving
 {
@@ -17,7 +18,8 @@ namespace PrizeGiving
         public IEnumerable<MeetupEvent> GetEventsForGroup(string groupName)
         {
             EnsureValidParameters(groupName);
-            return _meetupsService.GetEventsByGroupName(groupName).Result;
+            var res = Task.Run(() => _meetupsService.GetEventsByGroupName(groupName)).Result;
+            return res;
         }
 
         private static void EnsureValidParameters(string groupName)

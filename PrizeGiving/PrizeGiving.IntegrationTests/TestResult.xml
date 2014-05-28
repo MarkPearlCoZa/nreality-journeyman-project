@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Theo\Documents\GitHub\nreality-journeyman-project\PrizeGiving\PrizeGiving.IntegrationTests\PrizeGiving.IntegrationTests.csproj" total="11" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-05-17" time="15:09:20">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.6413" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\Theo\Documents\GitHub\nreality-journeyman-project\PrizeGiving\PrizeGiving.IntegrationTests" machine-name="BIGMAC" user="Theo" user-domain="BIGMAC" />
+  <culture-info current-culture="en-ZA" current-uiculture="en-US" />
+  <test-suite type="Project" name="C:\Users\Theo\Documents\GitHub\nreality-journeyman-project\PrizeGiving\PrizeGiving.IntegrationTests\PrizeGiving.IntegrationTests.csproj" executed="True" result="Success" success="True" time="37.444" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\Users\Theo\Documents\GitHub\nreality-journeyman-project\PrizeGiving\PrizeGiving.IntegrationTests\bin\Debug\PrizeGiving.IntegrationTests.dll" executed="True" result="Success" success="True" time="37.423" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="PrizeGiving" executed="True" result="Success" success="True" time="37.422" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Models" executed="True" result="Success" success="True" time="37.421" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="GroupEventsQueryImplTest" executed="True" result="Success" success="True" time="6.658" asserts="0">
+                    <results>
+                      <test-case name="PrizeGiving.Models.GroupEventsQueryImplTest.ReturnMeetupEventsForGroup" executed="True" result="Success" success="True" time="6.631" asserts="1" />
+                      <test-case name="PrizeGiving.Models.GroupEventsQueryImplTest.ThrowExceptionIfNoGroupSet" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="MeetupGroupEventRsvpQueryTests" executed="True" result="Success" success="True" time="5.689" asserts="0">
+                    <results>
+                      <test-case name="PrizeGiving.Models.MeetupGroupEventRsvpQueryTests.RsvpsForTheFirstEventShouldNotBeZero" executed="True" result="Success" success="True" time="5.688" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="MeetupServiceTests" executed="True" result="Success" success="True" time="25.064" asserts="0">
+                    <results>
+                      <test-case name="PrizeGiving.Models.MeetupServiceTests.EnsureRsvpMembersReturnedNameAndId" executed="True" result="Success" success="True" time="4.885" asserts="3" />
+                      <test-case name="PrizeGiving.Models.MeetupServiceTests.GetAllEventsForDeveloperUserGroupByName_ReturnsListOfEvents" executed="True" result="Success" success="True" time="2.445" asserts="1" />
+                      <test-case name="PrizeGiving.Models.MeetupServiceTests.GetAllEventsForDeveloperUserGroupByNameInOneMonth_ReturnsListOfEvents" executed="True" result="Success" success="True" time="2.014" asserts="1" />
+                      <test-case name="PrizeGiving.Models.MeetupServiceTests.GetAllEventsForNonExistingGroupName_ReturnsEmptyList" executed="True" result="Success" success="True" time="1.933" asserts="1" />
+                      <test-case name="PrizeGiving.Models.MeetupServiceTests.GetRsvpsForEventWithinOneMonth_ReturnsListOfRsvps" executed="True" result="Success" success="True" time="4.054" asserts="1" />
+                      <test-case name="PrizeGiving.Models.MeetupServiceTests.GetRsvpsForNonExistingEvent_ReturnsEmptyListOfRsvps" executed="True" result="Success" success="True" time="1.954" asserts="1" />
+                      <test-case name="PrizeGiving.Models.MeetupServiceTests.GetYesRsvpsForFirstEventWithinOneMonth_ReturnsListOfRsvpsWithYes" executed="True" result="Success" success="True" time="3.997" asserts="1" />
+                      <test-case name="PrizeGiving.Models.MeetupServiceTests.GetYesRsvpsForFirstEventWithinOneMonthEnsureThatMembersForEventHaveValidDetails" executed="True" result="Success" success="True" time="3.755" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="MembersWhoRsvpYesForAnEventTests" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

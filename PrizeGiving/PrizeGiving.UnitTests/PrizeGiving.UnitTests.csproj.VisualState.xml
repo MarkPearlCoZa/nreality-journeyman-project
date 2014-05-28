@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1000]C:\Users\Theo\Documents\GitHub\nreality-journeyman-project\PrizeGiving\PrizeGiving.UnitTests\PrizeGiving.UnitTests.csproj</TopNode>
+  <SelectedNode>[0-1005]PrizeGiving.UnitTests.MeetupGroupEventRsvpQueryTests.EmptyGroupEventIDThrowsAnException</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]C:\Users\Theo\Documents\GitHub\nreality-journeyman-project\PrizeGiving\PrizeGiving.UnitTests\PrizeGiving.UnitTests.csproj" Expanded="true" />
+    <Node UniqueName="[0-1006]C:\Users\Theo\Documents\GitHub\nreality-journeyman-project\PrizeGiving\PrizeGiving.UnitTests\bin\Debug\PrizeGiving.UnitTests.dll" Expanded="true" />
+    <Node UniqueName="[0-1007]PrizeGiving" Expanded="true" />
+    <Node UniqueName="[0-1008]PrizeGiving.UnitTests" Expanded="true" />
+    <Node UniqueName="[0-1009]PrizeGiving.UnitTests.Commands" Expanded="true" />
+    <Node UniqueName="[0-1001]PrizeGiving.UnitTests.Commands.SelectWinnerCommandTests" Expanded="true" />
+    <Node UniqueName="[0-1004]PrizeGiving.UnitTests.MeetupGroupEventRsvpQueryTests" Expanded="true" />
+  </Nodes>
+</VisualState>

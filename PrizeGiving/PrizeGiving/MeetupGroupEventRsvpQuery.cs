@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using PrizeGiving.Models;
 using PrizeGiving.Services;
+using System.Threading.Tasks;
 
 namespace PrizeGiving
 {
@@ -14,7 +15,7 @@ namespace PrizeGiving
 
             const string yesRsvpStatus = "Yes";
             var meetupService = new MeetupService(new Configuration());
-            var result = meetupService.GetRsvpsByEventIdAndRsvpAnswer(groupEventId, yesRsvpStatus)
+            var result = Task.Run(() => meetupService.GetRsvpsByEventIdAndRsvpAnswer(groupEventId, yesRsvpStatus))
                 .Result
                 .Select(x => x.MeetupMember);
 

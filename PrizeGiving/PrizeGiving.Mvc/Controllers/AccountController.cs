@@ -10,7 +10,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 using PrizeGiving.Mvc.Models;
 
-namespace PrizeGiving.Mvc.Controllers
+namespace PrizeGiving.Mvc.Models
 {
     [Authorize]
     public class AccountController : Controller

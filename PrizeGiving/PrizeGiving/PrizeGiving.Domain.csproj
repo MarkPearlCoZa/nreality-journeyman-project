@@ -53,6 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SelectWinner\CSharpRandomizer.cs" />
+    <Compile Include="SelectWinner\Randomizer.cs" />
+    <Compile Include="SelectWinner\SelectWinnerCommand.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="GroupEventRsvpQuery.cs" />
     <Compile Include="GroupEventsQuery.cs" />

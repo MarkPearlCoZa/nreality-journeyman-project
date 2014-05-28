@@ -1,10 +1,25 @@
-﻿@model PrizeGiving.Mvc.Controllers.IndexModel
+﻿@model PrizeGiving.Mvc.Models.IndexPresentation
 @{
-    
+    ViewBag.Title = "Random Draw";
 }
 
-<div class="row">
-    @Html.BeginForm(){
-    @Html.DropDownListFor(model => model.MeetupEvent, Model.Events, "Choose...")
-    } 
-</div>
+<h1>Developer UG Random Draw (yes, we know it's a pseudo-random number generator)</h1>
+
+@using (Html.BeginForm("SelectWinner","Home"))
+{
+    <div class="input-group">
+      <span class="input-group-addon">Events</span>
+        <select id="meetupEventId" name="meetupEventId" class="form-control">
+            @foreach (var item in Model.Events)
+            {
+                <option value="@item.Id">@item.Name</option>
+
+            }
+        </select>
+   </div>
+    <br/>
+    <div class="input-group">
+        <input type="submit" value="Choose Winner" class="form-control" />
+    </div>
+    
+}

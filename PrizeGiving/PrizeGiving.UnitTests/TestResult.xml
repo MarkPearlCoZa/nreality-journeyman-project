@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Theo\Documents\GitHub\nreality-journeyman-project\PrizeGiving\PrizeGiving.UnitTests\PrizeGiving.UnitTests.csproj" total="3" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-05-17" time="15:08:45">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.6413" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\Theo\Documents\GitHub\nreality-journeyman-project\PrizeGiving\PrizeGiving.UnitTests" machine-name="BIGMAC" user="Theo" user-domain="BIGMAC" />
+  <culture-info current-culture="en-ZA" current-uiculture="en-US" />
+  <test-suite type="Project" name="C:\Users\Theo\Documents\GitHub\nreality-journeyman-project\PrizeGiving\PrizeGiving.UnitTests\PrizeGiving.UnitTests.csproj" executed="True" result="Success" success="True" time="1.192" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\Users\Theo\Documents\GitHub\nreality-journeyman-project\PrizeGiving\PrizeGiving.UnitTests\bin\Debug\PrizeGiving.UnitTests.dll" executed="True" result="Success" success="True" time="1.170" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="PrizeGiving" executed="True" result="Success" success="True" time="1.167" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="UnitTests" executed="True" result="Success" success="True" time="1.165" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Commands" executed="True" result="Success" success="True" time="1.150" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="SelectWinnerCommandTests" executed="True" result="Success" success="True" time="1.144" asserts="0">
+                        <results>
+                          <test-case name="PrizeGiving.UnitTests.Commands.SelectWinnerCommandTests.AWinnerIsSelectedAndNotNull" executed="True" result="Success" success="True" time="1.078" asserts="1" />
+                          <test-case name="PrizeGiving.UnitTests.Commands.SelectWinnerCommandTests.TheCorrectWinnerIsReturnedBasedOnTheRandomNumber" executed="True" result="Success" success="True" time="0.043" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="MeetupGroupEventRsvpQueryTests" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                    <results>
+                      <test-case name="PrizeGiving.UnitTests.MeetupGroupEventRsvpQueryTests.EmptyGroupEventIDThrowsAnException" executed="True" result="Success" success="True" time="0.006" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
